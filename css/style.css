@@ -1,0 +1,187 @@
+*, *:after, *:before {
+    padding: 0;
+    margin: 0;
+    font-family: Tahoma;
+    font-size: 13px;
+    color: #888;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    transition-duration: .2s;
+    user-select:none;
+    -moz-user-select: none;
+}
+.wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+}
+.left-box {
+    width: 70em;
+    text-align: center;
+    overflow: hidden;
+    background-color: #00a2e0;
+    position: relative;
+}
+.main-circle {
+    margin-top: 4em;
+    width: 30em;
+    height: 30em;
+    background-color: rgb(244, 248, 249);
+    border: 15px solid rgb(236, 236, 236);
+    border-radius: 50%;
+    display: inline-block;
+    overflow:hidden;
+}
+.left-box img.showing {
+    /* object-fit: contain; */
+    width: 70em;
+    height: 100vh;
+}
+.main-name {
+    margin-top: 1em;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.right-box {
+    width: 35em;
+    overflow: hidden;
+    padding: 1.5em;
+}
+div.logo {
+    text-align: center;
+    padding: 1em;
+    border-bottom: 1px solid rgb(236, 236, 236);
+
+}
+span.logo {
+    font-size: 30px;
+    color: #00a2e0;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS';
+}
+
+.scrollable-card {
+    display: flex;
+}
+
+.card {
+    padding: .8em;
+    width: 7.6em;
+    cursor:pointer;
+}
+.card:hover {
+    transition-duration: .3s;
+    color: black;
+}
+.card:hover .pic-hole {
+    background:rgb(221, 230, 233);
+}
+.card:hover div {
+    color: black;
+}
+.pic-hole {
+    background: rgb(244, 248, 249);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid rgb(236, 236, 236);
+    position: relative;
+}
+.holder {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.holder > img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+div.time {
+    /* opacity: .2; */
+    color: rgb(148, 147, 147);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1em;
+    font-size: 14px;
+    text-align: center;
+}
+.pic-hole:hover div.time {
+    display: block;
+}
+.name {
+    text-align: center;
+    margin-top: 4px;
+}
+.title {
+    color: #555;
+    padding: 1em;
+    cursor: pointer;
+}
+.add, .catch{
+    display: inline-block;
+    margin-top: 1em;
+    cursor:pointer;
+}
+.add:hover, .catch:hover, .catch>span:hover {
+    color: white;
+}
+span.add, .catch > span, .catch {
+    color: gainsboro;
+}
+.catch{
+    border-bottom: 1px solid gainsboro;
+    padding: 1em;
+}
+.timer-box {
+    width: 50em;
+    margin-left: 10em;
+    margin-right: 10em;
+    position: absolute;
+    top: 2em;
+    background: rgba(214, 213, 213, .5);
+    height: 2em;
+    border-radius:20px;   
+    overflow: hidden;
+}
+.main-meter {
+    width: 0em;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: unset;
+}
+div.small-circle {
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
+    left: -1em; 
+    background: #00a2e0;
+    border-radius: 50%;
+    bottom: 0; 
+    overflow:hidden;
+}
+div.small-circle img {
+    height: 2.5em;
+    width: 2.5em;
+}
+.footer{
+    font-weight: bolder;
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top:1px solid gainsboro;
+    font-size: 11px;
+}
