@@ -22,8 +22,13 @@
     width: 70em;
     text-align: center;
     overflow: hidden;
-    background-color: #00a2e0;
+    background-color: #000000;
     position: relative;
+}
+.showNext:hover,
+.showPrev:hover {
+    background: rgba(255,255,255, .025);
+    transition: .5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 .main-circle {
     margin-top: 4em;
@@ -36,7 +41,7 @@
     overflow:hidden;
 }
 .left-box img.showing {
-    /* object-fit: contain; */
+    object-fit: none;
     width: 70em;
     height: 100vh;
 }
@@ -90,6 +95,9 @@ span.logo {
     border-radius: 50%;
     border: 1px solid rgb(236, 236, 236);
     position: relative;
+}
+.pic-hole:hover .holder {
+    opacity: .4;
 }
 .holder {
     position: absolute;
@@ -151,7 +159,7 @@ span.add, .catch > span, .catch {
     position: absolute;
     top: 2em;
     background: rgba(214, 213, 213, .5);
-    height: 2em;
+    height: 1em;
     border-radius:20px;   
     overflow: hidden;
 }
@@ -177,6 +185,7 @@ div.small-circle {
 div.small-circle img {
     height: 2.5em;
     width: 2.5em;
+    object-fit: cover;
 }
 .footer{
     font-weight: bolder;
@@ -184,4 +193,53 @@ div.small-circle img {
     padding-top: 1em;
     border-top:1px solid gainsboro;
     font-size: 11px;
+}
+.showNext, .showPrev {
+    width: 20em;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.showNext {
+    right: 0;
+}
+.showPrev {
+    left: 0
+}
+.auth-info {
+    position: absolute;
+    width: 0;
+    bottom: 2em;
+    right: 10em;
+    left: 10em;
+    text-align: left;
+    display: flex;
+    background: rgba(255,255,255,.75);
+    padding: .5em;
+    border-radius: 50px;
+    color: black;
+    height:5em!important;
+    overflow:hidden;
+}
+.name-text {
+    padding-left: 1em;
+}
+.auth-info .small-circle {
+    position: unset;
+    width: 50px;
+    height: 50px;
+    /* left: -2em; */
+}
+
+.auth-info .small-circle img {
+    width: 50px;
+    height: 50px;
+}
+
+.name-text > div:nth-child(1) {
+    color: black;
+    font-weight: bolder;
+    overflow: hidden;
 }
